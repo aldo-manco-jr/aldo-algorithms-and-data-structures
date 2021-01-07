@@ -2,9 +2,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by unieuro on 11/2/2019.
+/*
+ * Created by Aldo Manco
  */
+
 public class Main {
     public static void main(String[] args) {
         int[] radixArray = {47, 25, 45, 86, 13, 30, 87, 92, 15, 94, 57, 29};

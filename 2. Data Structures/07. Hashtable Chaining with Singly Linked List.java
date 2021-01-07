@@ -1,9 +1,10 @@
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-/**
- * Created by unieuro on 10/18/2019.
+/*
+ * Created by Aldo Manco
  */
+
 public class HashtableChaining {
     LinkedList<EmployeeHashtable>[] hashtable;
 

@@ -2,6 +2,10 @@
 
 #define SIZE 5
 
+/*
+ * Created by Aldo Manco
+ */
+
 int shortestPath(int chessboard[][SIZE], int x, int y);
 
 int main() {

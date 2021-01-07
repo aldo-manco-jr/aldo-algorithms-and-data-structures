@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+ * Created by Aldo Manco
+ */
+
 int AlgoSummation(int ini, int fin, int skull)
 {
 	skull=(fin*(fin+1))/2-(ini*(ini-1))/2;

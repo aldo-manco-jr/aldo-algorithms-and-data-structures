@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 
+/*
+ * Created by Aldo Manco
+ */
+
 double power(double x, unsigned y) {
     if (y == 0) {
         return 1;

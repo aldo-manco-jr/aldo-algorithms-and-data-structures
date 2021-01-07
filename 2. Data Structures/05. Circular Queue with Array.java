@@ -1,8 +1,9 @@
 import java.util.NoSuchElementException;
 
-/**
- * Created by unieuro on 10/16/2019.
+/*
+ * Created by Aldo Manco
  */
+
 public class ArrayQueue {
     Employee[] queue;
     int front;

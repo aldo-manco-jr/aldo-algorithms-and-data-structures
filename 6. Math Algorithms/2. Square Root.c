@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+ * Created by Aldo Manco
+ */
+
 double SquareRoot(double beta, double alpha, double x)
 {
 	beta=alpha/2; // 4.5

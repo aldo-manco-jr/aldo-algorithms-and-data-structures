@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+ * Created by Aldo Manco
+ */
+
 int max(int x, int y);
 
 int recursiveBalancedTeam(int arrayPlayers[], int arrayStrength[], int remainingStrength, int remainingPlayers,

@@ -3,6 +3,10 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+/*
+ * Created by Aldo Manco
+ */
+
 char *linearSort(char *string);
 
 int main() {
