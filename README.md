@@ -1,4 +1,4 @@
-# Algorithms & Data Structures</br>Implementation in C, Java Language</br>by Aldo Manco
+# Algorithms & Data Structures</br>Implementation in C, Java Languages</br>by Aldo Manco
 - Sorting Algorithms
 - Data Structures
 - Search Algorithms
