@@ -4,3 +4,4 @@
 - Search Algorithms
 - Graph Algorithms
 - Dynamic Programming
+- Numeric Calculus Algorithms
