@@ -13,6 +13,7 @@ int topologicalSortArray[8];
 int counter = 8;
 
 int main() {
+
     int graph[8][8] = {{0, 0, 0, 0, 0, 0, 0, 0},
                        {0, 0, 1, 1, 1, 0, 0, 0},
                        {0, 1, 0, 1, 0, 0, 0, 0},

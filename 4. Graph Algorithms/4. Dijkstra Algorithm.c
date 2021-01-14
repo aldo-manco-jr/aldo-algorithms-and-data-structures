@@ -1,7 +1,6 @@
-
 #include <stdio.h>
 
-#define INFINITY 9999
+#define INFINITY 2147483647
 #define MAX 10
 
 /*

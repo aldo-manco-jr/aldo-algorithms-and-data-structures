@@ -123,6 +123,33 @@ Algorithms___Data_Structures/fast:
 	$(MAKE) -f CMakeFiles/Algorithms___Data_Structures.dir/build.make CMakeFiles/Algorithms___Data_Structures.dir/build
 .PHONY : Algorithms___Data_Structures/fast
 
+4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.o: 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.o
+
+.PHONY : 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.o
+
+# target to build an object file
+4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.o:
+	$(MAKE) -f CMakeFiles/Algorithms___Data_Structures.dir/build.make CMakeFiles/Algorithms___Data_Structures.dir/4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.o
+.PHONY : 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.o
+
+4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.i: 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.i
+
+.PHONY : 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.i
+
+# target to preprocess a source file
+4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.i:
+	$(MAKE) -f CMakeFiles/Algorithms___Data_Structures.dir/build.make CMakeFiles/Algorithms___Data_Structures.dir/4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.i
+.PHONY : 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.i
+
+4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.s: 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.s
+
+.PHONY : 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.s
+
+# target to generate assembly for a file
+4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.s:
+	$(MAKE) -f CMakeFiles/Algorithms___Data_Structures.dir/build.make CMakeFiles/Algorithms___Data_Structures.dir/4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.s
+.PHONY : 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Algorithms___Data_Structures"
+	@echo "... 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.o"
+	@echo "... 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.i"
+	@echo "... 4._Graph_Algorithms/Number_of_Vertices_at_Maximum_Distance.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

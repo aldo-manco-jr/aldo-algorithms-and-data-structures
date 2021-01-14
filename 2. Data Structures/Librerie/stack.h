@@ -1,7 +1,3 @@
-//
-// Created by unieuro on 11/26/2019.
-//
-
 #ifndef GRAPHBFS_DFS_QUEUE_H
 #define GRAPHBFS_DFS_QUEUE_H
 
