@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "Algorithms___Data_Structures.exe"
   "Algorithms___Data_Structures.pdb"
+  "CMakeFiles/Algorithms___Data_Structures.dir/3._Search_Algorithms/3._Simulated_Annealing.c.o"
   "CMakeFiles/Algorithms___Data_Structures.dir/4._Graph_Algorithms/6._Number_of_Vertices_at_Maximum_Distance.c.o"
   "CMakeFiles/Algorithms___Data_Structures.dir/main.c.o"
   "libAlgorithms___Data_Structures.dll.a"

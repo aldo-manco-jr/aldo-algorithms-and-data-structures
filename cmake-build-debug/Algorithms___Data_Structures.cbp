@@ -74,6 +74,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/unieuro/Desktop/Development/Algorithms/Algorithms &amp; Data Structures/3. Search Algorithms/3. Simulated Annealing.c">
+			<Option target="Algorithms___Data_Structures"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/unieuro/Desktop/Development/Algorithms/Algorithms &amp; Data Structures/4. Graph Algorithms/6. Number of Vertices at Maximum Distance.c">
 			<Option target="Algorithms___Data_Structures"/>
 		</Unit>
