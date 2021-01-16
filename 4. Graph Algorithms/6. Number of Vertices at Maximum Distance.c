@@ -3,6 +3,10 @@
 
 #define INFINITE 2147483647
 
+/*
+ * Created by Aldo Manco
+ */
+
 int findNumberVerticesMaximumDistance(int graph[][8], int sourceVertex, int numberVerticesGraph);
 
 int main() {
