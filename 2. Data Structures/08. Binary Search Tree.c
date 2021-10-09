@@ -136,28 +136,28 @@ TreeNode *minValueNode(TreeNode *rootNode) {
 }
 
 TreeNode *delete(TreeNode *rootNode, int value) {
-if (rootNode == NULL) {
-return rootNode;
-}
+    if (rootNode == NULL) {
+        return rootNode;
+    }
 
-if (value < rootNode->value) {
-rootNode = delete(rootNode->leftChild, value);
-} else if (value > rootNode->value) {
-rootNode = delete(rootNode->rightChild, value);
-} else {
-if (rootNode->leftChild == NULL) {
-TreeNode *tmp = rootNode->rightChild;
-free(rootNode);
-return tmp;
-} else if (rootNode->rightChild == NULL) {
-TreeNode *tmp = rootNode->leftChild;
-free(rootNode);
-return tmp;
-} else {
-TreeNode *tmp = minValueNode(rootNode->rightChild);
-rootNode->value = tmp->value;
-rootNode->rightChild = delete(rootNode->rightChild, tmp->value);
-}
-return rootNode;
-}
+    if (value < rootNode->value) {
+        rootNode->left = delete(rootNode->leftChild, value);
+    } else if (value > rootNode->value) {
+        rootNode->right = delete(rootNode->rightChild, value);
+    } else {
+        if (rootNode->leftChild == NULL) {
+            TreeNode *tmp = rootNode->rightChild;
+            free(rootNode);
+            return tmp;
+        } else if (rootNode->rightChild == NULL) {
+            TreeNode *tmp = rootNode->leftChild;
+            free(rootNode);
+            return tmp;
+        } else {
+            TreeNode *tmp = minValueNode(rootNode->rightChild);
+            rootNode->value = tmp->value;
+            rootNode->rightChild = delete(rootNode->rightChild, tmp->value);
+        }
+    return rootNode;
+    }
 }
