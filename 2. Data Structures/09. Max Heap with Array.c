@@ -93,12 +93,8 @@ void delete(Heap *heap, int index) {
 
     heap->heap[index] = heap->heap[heap->size - 1];
     heap->size--;
-
-    if (index == 0 || heap->heap[index] < heap->heap[getParent(index)]) {
-        fixHeapBelow(heap, index, heap->size-1);
-    } else{
-        fixHeapAbove(heap, index);
-    }
+    
+    fixHeapBelow(heap, index, heap->size-1);
 }
 
 void fixHeapAbove(Heap *heap, int indexNewValue) {
