@@ -15,9 +15,7 @@ void printSolution(int path[]);
 
 Boolean canBeChosen(int currentVertex, Boolean graph[VERTICES][VERTICES], int path[], int toFillPosition);
 
-Boolean singlyHamiltonianCycle(Boolean graph[VERTICES][VERTICES], int path[], int toFillPosition);
-
-Boolean hamiltonianCycle(Boolean graph[VERTICES][VERTICES]);
+Boolean hamiltonianCycle(Boolean graph[VERTICES][VERTICES], int path[], int toFillPosition);
 
 int main() {
 
@@ -28,7 +26,20 @@ int main() {
                                          {false, true,  true,  true,  false},
     };
 
-    hamiltonianCycle(graph);
+    int *path = (int *) calloc(VERTICES, sizeof(int));
+
+    for (int i = 0; i < VERTICES; ++i) {
+        path[i] = -1;
+    }
+
+    path[0] = 0;
+
+    if (hamiltonianCycle(graph, path, 1) == false) {
+        puts("It doesn't exist any Hamiltonian Cycle in the Graph");
+    }
+
+    puts("First Hamiltonian Cycle Found:");
+    printSolution(path);
 
     return 0;
 }
@@ -49,7 +60,7 @@ Boolean canBeChosen(int currentVertex, Boolean graph[VERTICES][VERTICES], int pa
     return true;
 }
 
-Boolean singlyHamiltonianCycle(Boolean graph[VERTICES][VERTICES], int path[], int toFillPosition) {
+Boolean hamiltonianCycle(Boolean graph[VERTICES][VERTICES], int path[], int toFillPosition) {
 
     if (toFillPosition == VERTICES) {
 
@@ -66,7 +77,7 @@ Boolean singlyHamiltonianCycle(Boolean graph[VERTICES][VERTICES], int path[], in
 
             path[toFillPosition] = i;
 
-            if (singlyHamiltonianCycle(graph, path, toFillPosition+1) == true) {
+            if (hamiltonianCycle(graph, path, toFillPosition+1) == true) {
                 return true;
             }
 
@@ -77,29 +88,13 @@ Boolean singlyHamiltonianCycle(Boolean graph[VERTICES][VERTICES], int path[], in
     return false;
 }
 
-Boolean hamiltonianCycle(Boolean graph[VERTICES][VERTICES]) {
-
-    int *path = (int *) calloc(VERTICES, sizeof(int));
-
-    for (int i = 0; i < VERTICES; ++i) {
-        path[i] = -1;
-    }
-
-    path[0] = 0;
-
-    if (singlyHamiltonianCycle(graph, path, 1) == false) {
-        return false;
-    }
-
-    printSolution(path);
-    return true;
-}
-
 void printSolution(int path[]) {
 
     printf("Solution Exists:\n");
+
     for (int i = 0; i < VERTICES; i++) {
         printf("%d, ", path[i]);
     }
+
     printf("%d", path[0]);
 }
