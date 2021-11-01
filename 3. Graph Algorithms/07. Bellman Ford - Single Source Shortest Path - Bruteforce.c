@@ -4,15 +4,15 @@
 #define INFINITY 2147483647
 
 typedef struct {
-    int startingNode;  //start vertex of the edge
-    int endingNode;  //end vertex of the edge
-    int weight;  //weight of the edge (u,v)
+    int startingNode;
+    int endingNode;
+    int weight;
 } Edge;
 
 typedef struct {
-    int cardinalityVertices;        //total number of vertices in the graph
-    int cardinalityEdges;        //total number of edges in the graph
-    Edge *arrayEdges;  //array of edges
+    int cardinalityVertices;
+    int cardinalityEdges;
+    Edge *arrayEdges;
 } Graph;
 
 void bellmanFordSingleSourceShortestPath(Graph *graph, int singleSourceNode, int cardinalityVertices, int cardinalityEdges);
@@ -27,27 +27,22 @@ int main() {
 
     int singleSourceNode = 0;
 
-    //edge 0 --> 1
     graph->arrayEdges[0].startingNode = 0;
     graph->arrayEdges[0].endingNode = 1;
     graph->arrayEdges[0].weight = 5;
 
-    //edge 0 --> 2
     graph->arrayEdges[0].startingNode = 0;
     graph->arrayEdges[0].endingNode = 2;
     graph->arrayEdges[0].weight = 4;
 
-    //edge 1 --> 3
     graph->arrayEdges[0].startingNode = 1;
     graph->arrayEdges[0].endingNode = 3;
     graph->arrayEdges[0].weight = 3;
 
-    //edge 2 --> 1
     graph->arrayEdges[0].startingNode = 2;
     graph->arrayEdges[0].endingNode = 1;
     graph->arrayEdges[0].weight = 6;
 
-    //edge 3 --> 2
     graph->arrayEdges[0].startingNode = 3;
     graph->arrayEdges[0].endingNode = 2;
     graph->arrayEdges[0].weight = 2;
@@ -95,7 +90,7 @@ void bellmanFordSingleSourceShortestPath(Graph *graph, int singleSourceNode, int
         }
     }
 
-    printf("Distance Array - Bellman Ford: ");
+    printf("Bellman Ford Distance Array: ");
 
     for (int i = 0; i < cardinalityVertices; i++) {
         printf("%d, ", distanceArray[i]);
